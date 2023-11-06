@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="navbar">
     <div class="wrapper">
       <div class="logo"><a href="#"><img src="{{ asset('uploads/Logo/learn_logo.png') }}" alt="Logo" width="90"></a></div>
       <input type="radio" name="slider" id="menu-btn">
@@ -61,60 +61,88 @@
             </div>
           </div>
         </li>
-        <li><a href="#">Feedback</a></li>
+        <li><a href="{{url('auth')}}">Login / Register</a></li>
       </ul>
       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
     </div>
   </nav>
 
-  <!-- <div class="container-fluid">
-    <div class="card">
-      <div id="carouselExampleDark" class="carousel slide" data-ride="carousel" data-interval="1000">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="{{ asset('uploads/carousel/neom-EbIvcXzgU4s-unsplash.jpg')}}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <img src="{{ asset('uploads/carousel/first.png') }}" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="{{ asset('uploads/carousel/second.png') }}" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="{{ asset('uploads/carousel/third.png') }}" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{{ asset('uploads/carousel/photo-1682685797769-481b48222adf.avif')}}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{{ asset('uploads/carousel/photo-1688934150111-ab9a5d327087.avif')}}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{{ asset('uploads/carousel/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg')}}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fourth slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
       </div>
     </div>
-  </div> -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-  <div class="body-text">
-        <div class="title">Responsive Dropdown and Mega Menu</div>
-        <div class="sub-title">using only HTML & CSS</div>
+  <div class="Groww_TrustedByContainer">
+    <div class="Groww_TrustedBackgroundImage">
+      <img src="{{ asset('uploads/Logo/learn_logo.png') }}" alt="" srcset="">
+      <div class="GrowwTrusted_Left">
+        <h2 class="GrowwTrusted_Left_Heading">
+          Trusted by <br>
+          20 million+ users
+
+        </h2>
+        <div class="GrowwTrusted_left_Text">
+          Our cutting-edge technology ensure that all your information remains
+          fully encrypted and secure.
+        </div>
+      </div>
+      <div class="GrowwTrusted_right"></div>
     </div>
+  </div>
+
+    
 </body>
 <script src="{{ asset('Js/bootstrap.bundle.min.js') }}"></script>
+<script>
+  window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
 
 </html>
